@@ -7,6 +7,7 @@ class My {
         // countDigit(2345);
       // armStrong(153);
       // printDivisor(36);
+        // primeNumber(13);
     }
     static void decimalToBinary(int decimalNum){
         int resNum = 0;
@@ -89,5 +90,18 @@ class My {
            } 
            counter++;
         }
+    }
+
+    static void primeNumber(int num){
+        int counter = 2 ;
+        int sqroot = (int)Math.sqrt(num);
+        while(counter <= sqroot){
+           if(num%counter==0){
+           System.out.println( num + " is not a prime number");
+           return ; 
+           } 
+           counter++;
+        }
+        System.out.println( num + " is a prime number");
     }
 }
