@@ -8,6 +8,7 @@ class My {
       // armStrong(153);
       // printDivisor(36);
         // primeNumber(13);
+        sieveAlgo( 100 );
     }
     static void decimalToBinary(int decimalNum){
         int resNum = 0;
@@ -104,5 +105,9 @@ class My {
         }
         System.out.println( num + " is a prime number");
     }
+    static void sieveAlgo(int n)
+    {boolean[]p=new boolean[n+1];for(int i=2;i*i<=n;i++)
+        if(!p[i])for(int j=i*i;j<=n;j+=i)p[j]=true;for(int i=2;i<=n;i++)if(!p[i])System.out.print(i+" ");} 
+
 // }
 }
